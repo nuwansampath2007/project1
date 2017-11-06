@@ -9,6 +9,7 @@ export class ProductListComponent{
     pageTitle: string = 'Product List';
     imageWidth: number = 50;
     imageMargin: number = 2;
+    showImage: boolean = false;
     products: any[] = [
         {
             "productId":   2,
@@ -31,4 +32,8 @@ export class ProductListComponent{
             "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/2001-2007_Toyota_Coaster_bus_01.jpg" 
         }
     ];
+
+    toggleImage(): void{
+        this.showImage = !this.showImage;
+    }
 }
